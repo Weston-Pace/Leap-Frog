@@ -111,6 +111,19 @@ for i in 1:4000
   
 end
 
+"""
+dim1 = length(Velocity_List_1)
+dim2 = length(Velocity_List_1[1])
+Velocity_Matrix_1 = zeros(dim1, dim2)
+
+for i in 1:dim1
+    for j in 1:dim2
+        Velocity_Matrix_1[i,j] = Velocity_List_1[i][j]
+    end
+end
+plot(Velocity_Matrix_1[:,1] , Velocity_Matrix_1[:,2])
+"""
+
 dim1 = length(Position_List_1)
 dim2 = length(Position_List_1[1])
 Position_Matrix_1 = zeros(dim1, dim2)
@@ -158,6 +171,7 @@ plot(Position_Matrix_1[:,1] , Position_Matrix_1[:,2])
 plot!(Position_Matrix_2[:,1] , Position_Matrix_2[:,2])
 plot!(Position_Matrix_3[:,1] , Position_Matrix_3[:,2])
 plot!(Position_Matrix_4[:,1] , Position_Matrix_4[:,2])
+plot!(xlabel = "X-Position(m)", ylabel = "Y-Position(m)")
 
 
 
