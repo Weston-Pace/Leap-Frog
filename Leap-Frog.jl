@@ -26,66 +26,66 @@ for i in 1:4000
     if Position_List_1[i][1] != Position_List_3[i][1]
         if Position_List_1[i][1] < Position_List_3[i][1]
             if Position_List_1[i][2] > Position_List_3[i][2]
-                 Velocity_1 = [(1/(2*pi*Distance_1_2))+(1/(2*pi*Distance_1_4))*sin(atan((Position_List_1[i][2]-Position_List_4[i][2])/(Position_List_4[i][1]-Position_List_1[i][1]))) - (1/(2*pi*Distance_1_3))*sin(atan((Position_List_1[i][2]
+                 Velocity_1 = [(0.25/(2*pi*Distance_1_2))+(0.25/(2*pi*Distance_1_4))*sin(atan((Position_List_1[i][2]-Position_List_4[i][2])/(Position_List_4[i][1]-Position_List_1[i][1]))) - (0.25/(2*pi*Distance_1_3))*sin(atan((Position_List_1[i][2]
                 -Position_List_3[i][2])/(Position_List_3[i][1]-Position_List_1[i][1]))),
-                            (1/(2*pi*Distance_1_4))*cos(atan((Position_List_4[i][2]-Position_List_1[i][2])/(Position_List_4[i][1]-Position_List_1[i][1]))) -
-                            (1/(2*pi*Distance_1_3))*cos(atan((Position_List_3[i][2]-Position_List_1[i][2])/(Position_List_3[i][1]-Position_List_1[i][1])))]
+                            (0.25/(2*pi*Distance_1_4))*cos(atan((Position_List_4[i][2]-Position_List_1[i][2])/(Position_List_4[i][1]-Position_List_1[i][1]))) -
+                            (0.25/(2*pi*Distance_1_3))*cos(atan((Position_List_3[i][2]-Position_List_1[i][2])/(Position_List_3[i][1]-Position_List_1[i][1])))]
             elseif Position_List_1[i][2] <= Position_List_3[i][2]
-                 Velocity_1 = [(1/(2*pi*Distance_1_2))+(1/(2*pi*Distance_1_4))*sin(atan((Position_List_1[i][2]-Position_List_4[i][2])/(Position_List_4[i][1]-Position_List_1[i][1]))) + (1/(2*pi*Distance_1_3))*sin(atan((Position_List_3[i][2]
+                 Velocity_1 = [(0.25/(2*pi*Distance_1_2))+(0.25/(2*pi*Distance_1_4))*sin(atan((Position_List_1[i][2]-Position_List_4[i][2])/(Position_List_4[i][1]-Position_List_1[i][1]))) + (0.25/(2*pi*Distance_1_3))*sin(atan((Position_List_3[i][2]
                 -Position_List_1[i][2])/(Position_List_3[i][1]-Position_List_1[i][1]))),
-                            (1/(2*pi*Distance_1_4))*cos(atan((Position_List_1[i][2]-Position_List_4[i][2])/(Position_List_4[i][1]-Position_List_1[i][1]))) -
-                            (1/(2*pi*Distance_1_3))*cos(atan((Position_List_3[i][2]-Position_List_1[i][2])/(Position_List_3[i][1]-Position_List_1[i][1])))]
+                            (0.25/(2*pi*Distance_1_4))*cos(atan((Position_List_1[i][2]-Position_List_4[i][2])/(Position_List_4[i][1]-Position_List_1[i][1]))) -
+                            (0.25/(2*pi*Distance_1_3))*cos(atan((Position_List_3[i][2]-Position_List_1[i][2])/(Position_List_3[i][1]-Position_List_1[i][1])))]
             end
         else 
             if Position_List_1[i][2] < Position_List_3[i][2]
-                 Velocity_1 = [(1/(2*pi*Distance_1_2))+(1/(2*pi*Distance_1_4))*sin(atan((Position_List_1[i][2]-Position_List_4[i][2])/(Position_List_1[i][1]-Position_List_4[i][1]))) + (1/(2*pi*Distance_1_3))*sin(atan((Position_List_3[i][2]
+                 Velocity_1 = [(0.25/(2*pi*Distance_1_2))+(0.25/(2*pi*Distance_1_4))*sin(atan((Position_List_1[i][2]-Position_List_4[i][2])/(Position_List_1[i][1]-Position_List_4[i][1]))) + (0.25/(2*pi*Distance_1_3))*sin(atan((Position_List_3[i][2]
                 -Position_List_1[i][2])/(Position_List_1[i][1]-Position_List_3[i][1]))),
-                        -(1/(2*pi*Distance_1_4))*cos(atan((Position_List_1[i][2]-Position_List_4[i][2])/(Position_List_1[i][1]-Position_List_4[i][1]))) + (1/(2*pi*Distance_1_3))*cos(atan((Position_List_3[i][2]
+                        -(0.25/(2*pi*Distance_1_4))*cos(atan((Position_List_1[i][2]-Position_List_4[i][2])/(Position_List_1[i][1]-Position_List_4[i][1]))) + (0.25/(2*pi*Distance_1_3))*cos(atan((Position_List_3[i][2]
                         -Position_List_1[i][2])/(Position_List_1[i][1]-Position_List_3[i][1])))]
             elseif Position_List_1[i][2] >= Position_List_3[i][2]
-                 Velocity_1 = [(1/(2*pi*Distance_1_2))+(1/(2*pi*Distance_1_4))*sin(atan((Position_List_1[i][2]-Position_List_4[i][2])/(Position_List_1[i][1]-Position_List_4[i][1]))) - (1/(2*pi*Distance_1_3))*sin(atan((Position_List_1[i][2]
+                 Velocity_1 = [(0.25/(2*pi*Distance_1_2))+(0.25/(2*pi*Distance_1_4))*sin(atan((Position_List_1[i][2]-Position_List_4[i][2])/(Position_List_1[i][1]-Position_List_4[i][1]))) - (0.25/(2*pi*Distance_1_3))*sin(atan((Position_List_1[i][2]
                 -Position_List_3[i][2])/(Position_List_1[i][1]-Position_List_3[i][1]))),
-                        -(1/(2*pi*Distance_1_4))*cos(atan((Position_List_1[i][2]-Position_List_4[i][2])/(Position_List_1[i][1]-Position_List_4[i][1]))) + (1/(2*pi*Distance_1_3))*cos(atan((Position_List_3[i][2]
+                        -(0.25/(2*pi*Distance_1_4))*cos(atan((Position_List_1[i][2]-Position_List_4[i][2])/(Position_List_1[i][1]-Position_List_4[i][1]))) + (0.25/(2*pi*Distance_1_3))*cos(atan((Position_List_3[i][2]
                         -Position_List_1[i][2])/(Position_List_1[i][1]-Position_List_3[i][1])))]
             end
         end
          Velocity_2 = [Velocity_1[1], -Velocity_1[2]]
         if Position_List_3[i][1] > Position_List_1[i][1]
             if Position_List_3[i][2] >= Position_List_1[i][2]
-                 Velocity_3 = [(1/(2*pi*Distance_3_4))-(1/(2*pi*Distance_1_3))*sin(atan((Position_List_3[i][2]-Position_List_1[i][2])/(Position_List_3[i][1]-Position_List_1[i][1]))) + (1/(2*pi*Distance_2_3))*sin(atan((Position_List_3[i][2]
+                 Velocity_3 = [(0.25/(2*pi*Distance_3_4))-(0.25/(2*pi*Distance_1_3))*sin(atan((Position_List_3[i][2]-Position_List_1[i][2])/(Position_List_3[i][1]-Position_List_1[i][1]))) + (0.25/(2*pi*Distance_2_3))*sin(atan((Position_List_3[i][2]
                 -Position_List_2[i][2])/(Position_List_3[i][1]-Position_List_2[i][1]))),
-                            -(1/(2*pi*Distance_2_3))*cos(atan((Position_List_3[i][2]-Position_List_2[i][2])/(Position_List_3[i][1]-Position_List_2[i][1]))) +
-                            (1/(2*pi*Distance_1_3))*cos(atan((Position_List_3[i][2]-Position_List_1[i][2])/(Position_List_3[i][1]-Position_List_1[i][1])))]
+                            -(0.25/(2*pi*Distance_2_3))*cos(atan((Position_List_3[i][2]-Position_List_2[i][2])/(Position_List_3[i][1]-Position_List_2[i][1]))) +
+                            (0.25/(2*pi*Distance_1_3))*cos(atan((Position_List_3[i][2]-Position_List_1[i][2])/(Position_List_3[i][1]-Position_List_1[i][1])))]
             elseif Position_List_3[i][2] < Position_List_1[i][2]
-                 Velocity_3 = [(1/(2*pi*Distance_3_4))+(1/(2*pi*Distance_1_3))*sin(atan((Position_List_1[i][2]-Position_List_3[i][2])/(Position_List_3[i][1]-Position_List_1[i][1]))) + (1/(2*pi*Distance_2_3))*sin(atan((Position_List_3[i][2]
+                 Velocity_3 = [(0.25/(2*pi*Distance_3_4))+(0.25/(2*pi*Distance_1_3))*sin(atan((Position_List_1[i][2]-Position_List_3[i][2])/(Position_List_3[i][1]-Position_List_1[i][1]))) + (0.25/(2*pi*Distance_2_3))*sin(atan((Position_List_3[i][2]
                 -Position_List_2[i][2])/(Position_List_3[i][1]-Position_List_2[i][1]))),
-                            -(1/(2*pi*Distance_2_3))*cos(atan((Position_List_3[i][2]-Position_List_2[i][2])/(Position_List_3[i][1]-Position_List_2[i][1]))) +
-                            (1/(2*pi*Distance_1_3))*cos(atan((Position_List_1[i][2]-Position_List_3[i][2])/(Position_List_3[i][1]-Position_List_1[i][1])))]
+                            -(0.25/(2*pi*Distance_2_3))*cos(atan((Position_List_3[i][2]-Position_List_2[i][2])/(Position_List_3[i][1]-Position_List_2[i][1]))) +
+                            (0.25/(2*pi*Distance_1_3))*cos(atan((Position_List_1[i][2]-Position_List_3[i][2])/(Position_List_3[i][1]-Position_List_1[i][1])))]
             end
         else
             if Position_List_3[i][2] > Position_List_1[i][2]
-                 Velocity_3 = [(1/(2*pi*Distance_3_4)) - (1/(2*pi*Distance_1_3))*sin(atan((Position_List_3[i][2]-Position_List_1[i][2])/(Position_List_1[i][1]-Position_List_3[i][1]))) + (1/(2*pi*Distance_2_3))*sin(atan((Position_List_3[i][2]
+                 Velocity_3 = [(0.25/(2*pi*Distance_3_4)) - (0.25/(2*pi*Distance_1_3))*sin(atan((Position_List_3[i][2]-Position_List_1[i][2])/(Position_List_1[i][1]-Position_List_3[i][1]))) + (0.25/(2*pi*Distance_2_3))*sin(atan((Position_List_3[i][2]
                 -Position_List_2[i][2])/(Position_List_2[i][1]-Position_List_3[i][1]))),
-                        (1/(2*pi*Distance_2_3))*cos(atan((Position_List_3[i][2]-Position_List_2[i][2])/(Position_List_3[i][1]-Position_List_2[i][1]))) - (1/(2*pi*Distance_1_3))*cos(atan((Position_List_3[i][2]
+                        (0.25/(2*pi*Distance_2_3))*cos(atan((Position_List_3[i][2]-Position_List_2[i][2])/(Position_List_3[i][1]-Position_List_2[i][1]))) - (0.25/(2*pi*Distance_1_3))*cos(atan((Position_List_3[i][2]
                         -Position_List_1[i][2])/(Position_List_3[i][1]-Position_List_1[i][1])))]
             elseif Position_List_3[i][2] <= Position_List_1[i][2]
-                 Velocity_3 = [(1/(2*pi*Distance_3_4)) + (1/(2*pi*Distance_1_3))*sin(atan((Position_List_1[i][2]-Position_List_3[i][2])/(Position_List_1[i][1]-Position_List_3[i][1]))) + (1/(2*pi*Distance_2_3))*sin(atan((Position_List_3[i][2]
+                 Velocity_3 = [(0.25/(2*pi*Distance_3_4)) + (0.25/(2*pi*Distance_1_3))*sin(atan((Position_List_1[i][2]-Position_List_3[i][2])/(Position_List_1[i][1]-Position_List_3[i][1]))) + (0.25/(2*pi*Distance_2_3))*sin(atan((Position_List_3[i][2]
                 -Position_List_2[i][2])/(Position_List_2[i][1]-Position_List_3[i][1]))),
-                        (1/(2*pi*Distance_2_3))*cos(atan((Position_List_3[i][2]-Position_List_2[i][2])/(Position_List_2[i][1]-Position_List_3[i][1]))) - (1/(2*pi*Distance_1_3))*cos(atan((Position_List_1[i][2]
+                        (0.25/(2*pi*Distance_2_3))*cos(atan((Position_List_3[i][2]-Position_List_2[i][2])/(Position_List_2[i][1]-Position_List_3[i][1]))) - (0.25/(2*pi*Distance_1_3))*cos(atan((Position_List_1[i][2]
                         -Position_List_3[i][2])/(Position_List_1[i][1]-Position_List_3[i][1])))]
             end
         end
          Velocity_4 = [Velocity_3[1], -Velocity_3[2]]
     else
         if Position_List_1[i][2] < Position_List_3[i][2]
-             Velocity_1 = [((1/(2*pi*Distance_1_2)) + (1/(2*pi*Distance_1_3)) + (1/(2*pi*Distance_1_4))), 0]
+             Velocity_1 = [((0.25/(2*pi*Distance_1_2)) + (0.25/(2*pi*Distance_1_3)) + (0.25/(2*pi*Distance_1_4))), 0]
              Velocity_2 = Velocity_1
-             Velocity_3 = [(-(1/(2*pi*Distance_1_3)) + (1/(2*pi*Distance_2_3)) + (1/(2*pi*Distance_3_4))),0]
+             Velocity_3 = [(-(0.25/(2*pi*Distance_1_3)) + (0.25/(2*pi*Distance_2_3)) + (0.25/(2*pi*Distance_3_4))),0]
              Velocity_4 = Velocity_3
         else
-             Velocity_1 = [((1/(2*pi*Distance_1_2)) - (1/(2*pi*Distance_1_3)) + (1/(2*pi*Distance_1_4))), 0]
+             Velocity_1 = [((0.25/(2*pi*Distance_1_2)) - (0.25/(2*pi*Distance_1_3)) + (0.25/(2*pi*Distance_1_4))), 0]
              Velocity_2 = Velocity_1
-             Velocity_3 = [((1/(2*pi*Distance_1_3)) + (1/(2*pi*Distance_2_3)) + (1/(2*pi*Distance_3_4))), 0]
+             Velocity_3 = [((0.25/(2*pi*Distance_1_3)) + (0.25/(2*pi*Distance_2_3)) + (0.25/(2*pi*Distance_3_4))), 0]
              Velocity_4 = Velocity_3
         end
     end
